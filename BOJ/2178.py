@@ -7,7 +7,7 @@ queue = [(0,0)]
 dist[0][0] = 1      # 시작위치와 도착위치 포함
 
 while queue : 
-    x, y = queue.pop(0) #★
+    x, y = queue.pop(0)     #★
     if x == N-1 and y == M-1 :
         print(dist[x][y])
         break
