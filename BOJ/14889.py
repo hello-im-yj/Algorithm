@@ -1,6 +1,5 @@
 import sys
 from itertools import combinations
-from tracemalloc import start
 
 N = int(input())
 S = [list(map(int,sys.stdin.readline().split())) for _ in range(N)]
