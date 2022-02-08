@@ -30,7 +30,6 @@ def rule(idx) :
         for c in range(1,N+1) : 
             candheap.append(cand[r][c])                                
     heapq.heapify(candheap)
-    print(candheap)
     final_r , final_c = candheap[0][2] , candheap[0][3]
     result[final_r][final_c] = stdnum
 
@@ -47,6 +46,5 @@ def get_sat() :
 
 for i in range(N**2) :
     rule(i)
-    print(stu[i][0],result)
-print(result)
+    
 print(get_sat() )
